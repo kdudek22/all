@@ -1,0 +1,43 @@
+volumes:
+  data:
+  static_files:
+
+services:
+  visit_service_database:
+    env_file: .env
+    container_name: visit_service_database
+    image: postgres
+    ports:
+      - "6019:5432"
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+  visit_service_backend:
+    container_name: visit_service_backend
+    build:
+      context: ../backend
+      dockerfile: ../backend/Dockerfile
+    env_file: .env
+    ports:
+      - "8300:8000"
+    depends_on:
+      - visit_service_database
+    restart: always
+    volumes:
+      - static_files:/app/home_site/static_files
+
+  visit_service_frontend:
+    container_name: visit_service_frontend
+    env_file: .env
+    build:
+      context: ../frontend
+      dockerfile: ../frontend/Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - visit_service_backend
+    restart: always
+

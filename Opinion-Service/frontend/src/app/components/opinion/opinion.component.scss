@@ -1,0 +1,126 @@
+
+$border : 1px solid #e6d9ff;
+.opinion{
+    color: rgba(17, 17, 17, 1);
+    display: flex;
+    width: 100%;
+    
+    box-shadow: 10px 6px 9px 0px rgb(226, 226, 226);
+    border-radius: 10px;
+    min-height: 80px;
+    flex-wrap: nowrap;
+    .doctor-rating{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 200px !important;
+        border-radius: 10px 0 0 10px;
+        padding: 5px;
+        border-right: $border;
+       .doctor{
+        font-weight: 400;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+        .specialty{
+            font-size: 0.8rem;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+    .rating{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-style: italic;
+        border-right: $border;
+        min-width: 140px !important;
+    }
+    .content{
+        padding: 20px;
+        margin-right: auto;
+    }
+    .username{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: bold;
+        min-width: 200px !important;
+        border-left: $border;
+        font-style: oblique;
+    }
+
+    @media screen and (max-width: 527px){
+        .username{
+            border-right: $border;
+            width: 200px;
+        }
+        .doctor-rating{
+            width: 200px;
+
+        }
+        .content{
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 905px){
+    .opinion{
+        flex-direction: column;
+        overflow: hidden;
+        .doctor-rating{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px 10px 0 0;
+            border-right: none;
+            border-bottom: $border;
+            width: 100%;
+        }
+        .rating{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: none;
+            border-bottom: $border;
+            width: 100%;
+
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: none;
+            border-bottom: $border;
+            width: 100%;
+        }
+        .username{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: none;
+            border-right: none;
+            border-bottom: $border;
+            width: 100%;
+        }
+    }
+}
+
+.mat-icon {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // this is the parent span angular inserts for icon inside mat-fab
+  ::ng-deep.mat-fab .mat-button-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+  }

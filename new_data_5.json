@@ -1,0 +1,470 @@
+[
+{
+  "model": "api.availabilityinterval",
+  "pk": 1,
+  "fields": {
+    "start": "08:00:00",
+    "end": "16:00:00"
+  }
+},
+{
+  "model": "api.availabilityinterval",
+  "pk": 2,
+  "fields": {
+    "start": "12:00:00",
+    "end": "14:00:00"
+  }
+},
+{
+  "model": "api.availabilityinterval",
+  "pk": 3,
+  "fields": {
+    "start": "09:00:00",
+    "end": "13:00:00"
+  }
+},
+{
+  "model": "api.availabilitytable",
+  "pk": 1,
+  "fields": {
+    "monday": 1,
+    "tuesday": 1,
+    "wednesday": null,
+    "thursday": 2,
+    "friday": 2,
+    "saturday": null,
+    "sunday": null
+  }
+},
+{
+  "model": "api.availabilitytable",
+  "pk": 2,
+  "fields": {
+    "monday": 3,
+    "tuesday": 3,
+    "wednesday": null,
+    "thursday": null,
+    "friday": null,
+    "saturday": null,
+    "sunday": null
+  }
+},
+{
+  "model": "api.availabilitytable",
+  "pk": 3,
+  "fields": {
+    "monday": null,
+    "tuesday": null,
+    "wednesday": 2,
+    "thursday": 1,
+    "friday": null,
+    "saturday": null,
+    "sunday": null
+  }
+},
+{
+  "model": "api.doctortoavailabilitytable",
+  "pk": 1,
+  "fields": {
+    "doctor_id": "c2cbe32c-4c3a-4913-af56-42f97414aa2a",
+    "availability_table": 1
+  }
+},
+{
+  "model": "api.doctortoavailabilitytable",
+  "pk": 2,
+  "fields": {
+    "doctor_id": "08d7fe69-3f69-4145-98cc-aa33d5b9d05f",
+    "availability_table": 2
+  }
+},
+{
+  "model": "api.doctortoavailabilitytable",
+  "pk": 3,
+  "fields": {
+    "doctor_id": "fcb8dcae-a6ee-418f-b87f-9c6a96989e27",
+    "availability_table": 3
+  }
+},
+{
+  "model": "api.service",
+  "pk": 1,
+  "fields": {
+    "name": "USG brzucha",
+    "description": "Kompleksowe badanie USG brzucha",
+    "doctor_id": "fcb8dcae-a6ee-418f-b87f-9c6a96989e27",
+    "price": 250
+  }
+},
+{
+  "model": "api.service",
+  "pk": 2,
+  "fields": {
+    "name": "USG nerek",
+    "description": "Badanie USG nerek, kompleksowe badanie",
+    "doctor_id": "fcb8dcae-a6ee-418f-b87f-9c6a96989e27",
+    "price": 150
+  }
+},
+{
+  "model": "api.service",
+  "pk": 3,
+  "fields": {
+    "name": "Badanie wzroku",
+    "description": "Kompleksowe badanie wzroku wykonywane przy użyciu specjalistycznego sprzętu",
+    "doctor_id": "08d7fe69-3f69-4145-98cc-aa33d5b9d05f",
+    "price": 100
+  }
+},
+{
+  "model": "api.service",
+  "pk": 4,
+  "fields": {
+    "name": "Konsultacja z okulistą",
+    "description": "Konsultacja z okulstą, rekomendacja leczenia, badań",
+    "doctor_id": "08d7fe69-3f69-4145-98cc-aa33d5b9d05f",
+    "price": 80
+  }
+},
+{
+  "model": "api.service",
+  "pk": 5,
+  "fields": {
+    "name": "Wizyta dermatologiczna",
+    "description": "Wizyta u dermatologa - konsultacja, zbadanie i leczenie",
+    "doctor_id": "c2cbe32c-4c3a-4913-af56-42f97414aa2a",
+    "price": 300
+  }
+},
+{
+  "model": "api.order",
+  "pk": 1,
+  "fields": {
+    "date": "2024-06-10T09:00:00Z",
+    "customer_id": "6f5c3e6d-76df-49de-ac1b-723523b9f2ab",
+    "service": 4
+  }
+},
+{
+  "model": "api.order",
+  "pk": 2,
+  "fields": {
+    "date": "2024-06-13T08:00:00Z",
+    "customer_id": "6f5c3e6d-76df-49de-ac1b-723523b9f2ab",
+    "service": 1
+  }
+},
+{
+  "model": "api.order",
+  "pk": 3,
+  "fields": {
+    "date": "2024-06-13T10:00:00Z",
+    "customer_id": "6f5c3e6d-76df-49de-ac1b-723523b9f2ab",
+    "service": 1
+  }
+},
+{
+  "model": "api.order",
+  "pk": 4,
+  "fields": {
+    "date": "2024-06-13T13:00:00Z",
+    "customer_id": "6f5c3e6d-76df-49de-ac1b-723523b9f2ab",
+    "service": 1
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$ynMVBZg74PcU8iWgCQYRfq$tjGyHQDET/ROBdHVwKMlfSvgMO8dvTGtG4NcGpmCnPc=",
+    "last_login": "2024-06-07T10:33:45.737Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "asd@asd.asd",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-06-07T10:33:31.668Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rhuwpz3wbuijwez88316uq0aidgjewri",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgoAWX7j1DMzCMVA0kpV0Z765NutDtf-_9l5hwW8u09bxMM4mz0OL0u0VMj1x3QHestyZTq-syR7kr8qBdXhvl5-Vw_w4K9vKtAxnF5Dga1mgoOxVcGAEhAmULHrTiDDgQs9LsnLejD2lwVoEZLIF4fwDq9Td1:1sFWun:zvl9q9yLveuyeDXUy5WdYSXIxnYRpcb4QRZ13OK77Kc",
+    "expire_date": "2024-06-21T10:33:45.740Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-06-07T10:34:34.186Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilityinterval"
+    ],
+    "object_id": "1",
+    "object_repr": "08:00:00 - 16:00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-06-07T10:34:42.918Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilityinterval"
+    ],
+    "object_id": "2",
+    "object_repr": "12:00:00 - 14:00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-06-07T10:34:48.741Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilityinterval"
+    ],
+    "object_id": "2",
+    "object_repr": "12:00:00 - 14:00:00",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-06-07T10:34:57.947Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilityinterval"
+    ],
+    "object_id": "3",
+    "object_repr": "09:00:00 - 13:00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-06-07T10:35:08.012Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilitytable"
+    ],
+    "object_id": "1",
+    "object_repr": "AvailabilityTable object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-06-07T10:35:14.689Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilitytable"
+    ],
+    "object_id": "2",
+    "object_repr": "AvailabilityTable object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-06-07T10:35:28.905Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilitytable"
+    ],
+    "object_id": "3",
+    "object_repr": "AvailabilityTable object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-06-07T10:36:01.643Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "doctortoavailabilitytable"
+    ],
+    "object_id": "1",
+    "object_repr": "DoctorToAvailabilityTable object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-06-07T10:36:10.682Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "doctortoavailabilitytable"
+    ],
+    "object_id": "2",
+    "object_repr": "DoctorToAvailabilityTable object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-06-07T10:36:20.735Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "doctortoavailabilitytable"
+    ],
+    "object_id": "3",
+    "object_repr": "DoctorToAvailabilityTable object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-06-07T10:36:55.031Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "service"
+    ],
+    "object_id": "1",
+    "object_repr": "fcb8dcae-a6ee-418f-b87f-9c6a96989e27USG brzucha",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-06-07T10:37:25.406Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "service"
+    ],
+    "object_id": "2",
+    "object_repr": "fcb8dcae-a6ee-418f-b87f-9c6a96989e27USG nerek",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-06-07T10:39:29.732Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "service"
+    ],
+    "object_id": "3",
+    "object_repr": "08d7fe69-3f69-4145-98cc-aa33d5b9d05fBadanie wzroku",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-06-07T10:40:20.644Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "service"
+    ],
+    "object_id": "4",
+    "object_repr": "08d7fe69-3f69-4145-98cc-aa33d5b9d05fKonsultacja z okulistą",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-06-07T10:41:15.342Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "service"
+    ],
+    "object_id": "5",
+    "object_repr": "c2cbe32c-4c3a-4913-af56-42f97414aa2aWizyta dermatologiczna",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]

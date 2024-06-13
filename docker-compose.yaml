@@ -1,0 +1,5 @@
+include:   
+  - ./UserService/docker-compose.yml   
+  - ./Visit-Service/Docker/docker-compose.yaml
+  - ./Medical-Documentation-Service/docker-compose.yaml
+  - ./Opinion-Service/docker-compose.yml

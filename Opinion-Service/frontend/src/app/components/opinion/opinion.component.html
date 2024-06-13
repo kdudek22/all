@@ -1,0 +1,30 @@
+<div class="opinion row" *ngIf="opinion">
+    <div class="doctor-rating col-2">
+        <div class="doctor">
+            <span>{{opinion.doctorName}}</span>
+        </div>
+    </div>
+    <div class="rating col-2">
+        <ngx-stars [readonly]="true" [initialStars]="opinion.rating"></ngx-stars>
+    </div>
+    <div class="content col">
+        <span>{{opinion.content}}</span>
+    </div>
+    <div class="username col-2">
+        @if (user?.id == opinion.userId) {
+            <button mat-icon-button [matMenuTriggerFor]="menu" >
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <app-edit-opinion [opinion]="opinion" [doctors]="doctors" (opinionEdit)="reloadPage()"></app-edit-opinion>
+                <button mat-menu-item  (click)="deleteOpinion(opinion.id)">
+                    <mat-icon>delete</mat-icon>
+                    <span>Delete</span>
+                </button>
+            </mat-menu>
+        }
+        @else {
+            <span>{{opinion.username}}</span>
+        }
+    </div>
+</div>

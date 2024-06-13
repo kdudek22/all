@@ -1,0 +1,53 @@
+<div class="all container-fluid g-0 overflow-hidden">
+    <div class="header">
+        <app-add-opinion (opinionAdded)="handleOpinionAdded()" [doctors]="doctors"></app-add-opinion>
+        <app-filter [doctors]="doctors" [filters]="filters"></app-filter>
+    </div>
+
+    <div class="opinions">
+        <div class="opinion-descr row">
+            <div class="doctor-rating col-2">
+                <span>Doctor</span>
+            </div>
+            <div class="content col-2">
+                <span>Rating</span>
+            </div>
+            <div class="content col">
+                <span>Review</span>
+            </div>
+            <div class="username col-2">
+                <span>Username</span>
+            </div>
+        </div>
+        @if (!error) {
+            @for (opinion of opinions; track opinion) {
+                <app-opinion [opinion]="opinion" [doctors]="doctors"></app-opinion>
+            }
+        }
+        @if (error || (!opinions || opinions.length === 0)) {
+            <div class="no-opinions">
+                @if (error === '') {
+                    <div>No opinions found! :(</div>
+                    <div>Try searching with different parameters</div>
+                }
+                @if (error !== '') {
+                    <div>{{ error }}</div>
+                }
+            </div>
+        }
+    </div>
+</div>
+<footer class="fo">
+    <mat-paginator #paginator
+               class="paginator"
+               (page)="handlePageEvent($event)"
+               [length]="totalNumberOfPages * filters.pageSize"
+               [pageSize]="filters.pageSize"
+               [showFirstLastButtons]="true"
+               [hidePageSize]="false"
+               [pageSizeOptions]="[5, 10, 20]"
+               [pageIndex]="filters.page - 1"
+               aria-label="Select page">
+    </mat-paginator>
+</footer>
+

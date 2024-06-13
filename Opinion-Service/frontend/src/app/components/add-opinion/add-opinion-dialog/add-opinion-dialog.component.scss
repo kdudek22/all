@@ -1,0 +1,47 @@
+
+.title-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .close-btn{
+        margin-right: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 300px;
+    width: 40vw;
+    max-width: 600px;
+    .select-field{
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+
+    .textarea-field{
+        
+        width: 100%;
+        textarea{
+            height: 150px;
+        }
+    }
+    .right{
+        align-self: flex-end;
+    }
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+

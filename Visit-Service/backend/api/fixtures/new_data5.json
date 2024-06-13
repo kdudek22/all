@@ -1,0 +1,720 @@
+[
+{
+  "model": "api.availabilityinterval",
+  "pk": 1,
+  "fields": {
+    "start": "08:00:00",
+    "end": "15:00:00"
+  }
+},
+{
+  "model": "api.availabilityinterval",
+  "pk": 2,
+  "fields": {
+    "start": "10:00:00",
+    "end": "16:00:00"
+  }
+},
+{
+  "model": "api.availabilityinterval",
+  "pk": 3,
+  "fields": {
+    "start": "12:00:00",
+    "end": "16:00:00"
+  }
+},
+{
+  "model": "api.availabilityinterval",
+  "pk": 4,
+  "fields": {
+    "start": "11:00:00",
+    "end": "16:00:00"
+  }
+},
+{
+  "model": "api.availabilityinterval",
+  "pk": 5,
+  "fields": {
+    "start": "09:00:00",
+    "end": "15:00:00"
+  }
+},
+{
+  "model": "api.availabilitytable",
+  "pk": 1,
+  "fields": {
+    "monday": 5,
+    "tuesday": 1,
+    "wednesday": null,
+    "thursday": 2,
+    "friday": 4,
+    "saturday": null,
+    "sunday": null
+  }
+},
+{
+  "model": "api.doctor",
+  "pk": 1,
+  "fields": {
+    "first_name": "Adam",
+    "last_name": "Małysz",
+    "availability_table": 1
+  }
+},
+{
+  "model": "api.doctor",
+  "pk": 2,
+  "fields": {
+    "first_name": "Maciej",
+    "last_name": "Kicha",
+    "availability_table": 1
+  }
+},
+{
+  "model": "api.doctor",
+  "pk": 3,
+  "fields": {
+    "first_name": "Maciej",
+    "last_name": "Kicha",
+    "availability_table": 1
+  }
+},
+{
+  "model": "api.customer",
+  "pk": 1,
+  "fields": {
+    "username": "jan2115",
+    "password": "pies123"
+  }
+},
+{
+  "model": "api.customer",
+  "pk": 2,
+  "fields": {
+    "username": "Paweł",
+    "password": "2115"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 1,
+  "fields": {
+    "name": "Konsultacja Dermatologiczna",
+    "description": "Konsultacja dermatologiczna przeznaczona dla dzieci w wieku 18-26",
+    "doctor": 1,
+    "price": 169
+  }
+},
+{
+  "model": "api.service",
+  "pk": 2,
+  "fields": {
+    "name": "Nastawianie pleców",
+    "description": "Konsultacja odnośnie nastawiania pleców",
+    "doctor": 1,
+    "price": 100
+  }
+},
+{
+  "model": "api.service",
+  "pk": 3,
+  "fields": {
+    "name": "USG",
+    "description": "USG jamy brzusznej",
+    "doctor": 2,
+    "price": 100
+  }
+},
+{
+  "model": "api.service",
+  "pk": 4,
+  "fields": {
+    "name": "Morfologia",
+    "description": "Morfologia dla dzieci i dorosłych",
+    "doctor": 1,
+    "price": 100
+  }
+},
+{
+  "model": "api.order",
+  "pk": 1,
+  "fields": {
+    "date": "2024-05-07T10:30:00Z",
+    "customer": 1,
+    "service": 1
+  }
+},
+{
+  "model": "api.order",
+  "pk": 2,
+  "fields": {
+    "date": "2024-05-06T10:30:00Z",
+    "customer": 1,
+    "service": 1
+  }
+},
+{
+  "model": "api.order",
+  "pk": 9,
+  "fields": {
+    "date": "2024-05-10T14:00:00Z",
+    "customer": 1,
+    "service": 1
+  }
+},
+{
+  "model": "api.order",
+  "pk": 10,
+  "fields": {
+    "date": "2024-05-10T12:30:00Z",
+    "customer": 1,
+    "service": 1
+  }
+},
+{
+  "model": "api.order",
+  "pk": 12,
+  "fields": {
+    "date": "2024-05-10T15:30:00Z",
+    "customer": 1,
+    "service": 1
+  }
+},
+{
+  "model": "api.order",
+  "pk": 13,
+  "fields": {
+    "date": "2024-06-14T11:30:00Z",
+    "customer": 1,
+    "service": 1
+  }
+},
+{
+  "model": "api.order",
+  "pk": 14,
+  "fields": {
+    "date": "2024-05-10T16:00:00Z",
+    "customer": 2,
+    "service": 2
+  }
+},
+{
+  "model": "api.order",
+  "pk": 15,
+  "fields": {
+    "date": "2024-05-13T11:00:00Z",
+    "customer": 2,
+    "service": 2
+  }
+},
+{
+  "model": "api.order",
+  "pk": 16,
+  "fields": {
+    "date": "2024-06-14T14:30:00Z",
+    "customer": 1,
+    "service": 1
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$CJiSNHCVC3YLnZEerBywtv$a81PPOSFFHM/F0GRxIz4/k5X1KSpeqrF1cAhmoFuZsg=",
+    "last_login": "2024-05-08T08:16:14.022Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "asd@asd.asd",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-05-07T19:27:42.302Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "igjodcb5palmrfgdy2u4epjl4pkpm93q",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBGYAou3fcMZICpVA0kpV0Z765NutDtf-_9lwi0rSVsnZcwZ3ERIE6_W6T04LqDfKd6azK1ui5zlLsiD9rl2DI_r4f7d1Col2-tcUqgkwJED4Ynx-ANeXRnpXIE46xjbTAPlDkqZQcLnKJyjBa11iTeH8MtNw4:1s4QTk:bEfJ5ezF8eKBNKBELj1UrZ4QaShcv2DLl7xeWhY-DBY",
+    "expire_date": "2024-05-21T19:27:56.653Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "y0fylib1bn0tznjcjxezze1bxecal19s",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBGYAou3fcMZICpVA0kpV0Z765NutDtf-_9lwi0rSVsnZcwZ3ERIE6_W6T04LqDfKd6azK1ui5zlLsiD9rl2DI_r4f7d1Col2-tcUqgkwJED4Ynx-ANeXRnpXIE46xjbTAPlDkqZQcLnKJyjBa11iTeH8MtNw4:1s4cTG:oAhtrf9OLEsrGsoJvhhp6ysat11zdcRSzS2xTrPEI54",
+    "expire_date": "2024-05-22T08:16:14.028Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-05-07T19:28:22.207Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilityinterval"
+    ],
+    "object_id": "1",
+    "object_repr": "08:00:00 - 15:00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-05-07T19:28:32.620Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilityinterval"
+    ],
+    "object_id": "2",
+    "object_repr": "10:00:00 - 16:00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-05-07T19:28:41.686Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "availabilitytable"
+    ],
+    "object_id": "1",
+    "object_repr": "AvailabilityTable object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-05-07T19:28:51.943Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "doctor"
+    ],
+    "object_id": "1",
+    "object_repr": "Adam Małysz",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-05-07T19:29:29.493Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "service"
+    ],
+    "object_id": "1",
+    "object_repr": "Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-05-08T08:17:00.704Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "doctor"
+    ],
+    "object_id": "2",
+    "object_repr": "Maciej Kicha",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-05-08T08:17:18.430Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "service"
+    ],
+    "object_id": "3",
+    "object_repr": "Maciej KichaUSG",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-05-08T15:48:07.619Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "customer"
+    ],
+    "object_id": "1",
+    "object_repr": "jan2115 pies123",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-05-08T15:48:33.545Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "1",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-05-08T15:48:54.009Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "2",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-05-08T19:59:50.856Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "3",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-05-08T21:25:50.387Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "2",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-05-08T21:25:59.243Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "1",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-05-08T21:26:05.469Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "3",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-05-08T21:26:20.272Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "3",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-05-09T10:17:54.073Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "4",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-05-09T10:20:15.049Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "4",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-05-09T10:20:34.592Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "4",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-05-09T16:51:00.601Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "8",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-05-09T16:51:00.605Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "7",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-05-09T16:51:00.607Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "6",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-05-09T16:51:00.609Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "5",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-05-09T16:51:00.612Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "4",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-05-09T16:51:00.614Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "3",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-05-09T18:26:03.689Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "order"
+    ],
+    "object_id": "11",
+    "object_repr": "jan2115 pies123Adam MałyszKonsultacja Dermatologiczna",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-05-09T19:31:05.115Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "api",
+      "customer"
+    ],
+    "object_id": "2",
+    "object_repr": "Paweł 2115",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]

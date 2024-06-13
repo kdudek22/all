@@ -1,0 +1,50 @@
+
+.filters{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2vw;
+    min-width: 100px;
+    max-width: 1200px;
+    width: 95vw;
+    align-items: center;
+    height: 70px;
+}
+.select-field{
+    max-width: 600px;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 527px){
+    .filters{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 1px;
+        h5{
+            width: 300px;
+            margin-top: 20px;
+        }
+        .select-field{
+            width: 480px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1416px){
+    .filters{
+        margin-top: 20px;
+        h5{
+            margin-left: 2vw;
+        }
+    }
+    
+}

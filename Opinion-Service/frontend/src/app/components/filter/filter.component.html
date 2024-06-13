@@ -1,0 +1,31 @@
+<div class="filters row">
+    <div class="col-2">
+        <h5>Filter opinions</h5>
+    </div>
+    <mat-form-field class="select-field col">
+        <mat-label>Select a doctor</mat-label>
+        <mat-select [(value)]="filters.doctorId" (valueChange)="onFilterChange(true)">
+            <mat-option  [value]="">
+                <span>{{'None'}}</span>
+            </mat-option>
+            @for (doctor of doctors; track doctor) {
+                <mat-option [value]="doctor?.id">
+                    <span>{{doctorToString(doctor)}}</span>
+                </mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field class="select-field col">
+        <mat-label>Select a min rating</mat-label>
+        <mat-select [(value)]="filters.minRating" (valueChange)="onFilterChange(true)">
+            <mat-option  [value]="">
+                <span>{{'None'}}</span>
+            </mat-option>
+            @for (rating of ratings; track rating) {
+                <mat-option [value]="rating">
+                    <span>{{rating}}</span>
+                </mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+</div>

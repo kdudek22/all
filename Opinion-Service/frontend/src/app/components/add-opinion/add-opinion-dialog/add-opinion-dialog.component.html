@@ -1,0 +1,35 @@
+<div class="title-field">
+    <h1 mat-dialog-title>Add Opinion</h1>
+    <button mat-icon-button mat-dialog-close="false" color="primary" class="close-btn">
+        <mat-icon fontIcon="close"></mat-icon>
+    </button>
+</div>
+<div mat-dialog-content>
+    <form [formGroup]="form" class="form">
+        <mat-form-field class="select-field">
+            <mat-label>Select a doctor</mat-label>
+            <mat-select formControlName="doctorId">
+                <mat-option  [value]="">
+                    <span>{{'None'}}</span>
+                </mat-option>
+                @for (doctor of doctors; track doctor) {
+                    <mat-option [value]="doctor?.id">
+                        <span>{{doctorToString(doctor)}}</span>
+                    </mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+
+        
+        <mat-label>Rating</mat-label>
+        
+        <ngx-stars [wholeStars]="true" [readonly]="false" (ratingOutput)="changeRating($event)"></ngx-stars>
+            
+        <mat-form-field class="textarea-field">
+            <textarea matInput formControlName="content" placeholder="Write your review here..."></textarea>
+        </mat-form-field>
+        <span class="error">{{error}}</span>
+        <button class="right" mat-raised-button (click)="onSubmit()"  color="primary" [disabled]="!form.valid" type="submit">Add</button>
+    </form>
+</div> 
+

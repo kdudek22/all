@@ -1,0 +1,16 @@
+# python env .gitignore
+__pycache__/
+*.pyc
+backend.egg-info/
+
+# env
+.env
+venv/
+
+
+# IDE
+.idea/
+.vscode/
+
+# github
+.pre-commit-config.yaml
